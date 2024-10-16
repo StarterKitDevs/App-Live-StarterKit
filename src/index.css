@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ju367v9i {
+    border-radius: 0 !important;
+    background-color: #ffa500 !important;
+    color: #161616 !important;
+    font-family: "Figtree", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+}
+
+@media only screen and (max-width: 400px){
+  .ju367v8 {
+    font-size: 14px !important;
+  }
+}
+
+
+body, * {
+    font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  
