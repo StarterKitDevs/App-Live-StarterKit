@@ -80,7 +80,7 @@ const Hero = () => {
       </div>
      </div>
       <p className="container mx-auto mt-8 font-semibold px-2">
-      Welcome to Starter Kit, the online curriculum that empowers you by giving you tangible skillsets, information, and tools! Our approach to education focuses on providing you with the tangible skillsets and knowledge you need to succeed. We don&apos;t give financial advice at all. Our focus is solely on building tools and educating through community and our online curriculum. Here are the tools just start!
+      Starter Kit is an online curriculum designed to empower you with tangible skillsets and knowledge in areas like Web3, crypto, blockchain, and technical analysis. It focuses on providing tools and resources for individuals at any level of their journey, helping them start or grow their projects in the blockchain space. The community offers DIY resources for trading, DeFi, content creation, and more.
       </p>
     </section>
   );
