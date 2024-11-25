@@ -23,7 +23,7 @@ const Hero = () => {
         </a>
         <a
           className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold"
-          href="https://https://www.youtube.com/@GetStarterKit"
+          href="https://www.youtube.com/@GetStarterKit"
         >
           Subscribe
         </a>
