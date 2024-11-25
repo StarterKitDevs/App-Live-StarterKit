@@ -11,9 +11,9 @@ const Hero = () => {
       <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2  mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
         <a
           className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold"
-          href="https://app.getstarterkit.com/"
+          href="https://getstarterkit.com/"
         >
-          App
+          Home
         </a>
         <a
           className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold"
@@ -23,9 +23,9 @@ const Hero = () => {
         </a>
         <a
           className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold"
-          href="https://store.getstarterkit.com/"
+          href="https://https://www.youtube.com/@GetStarterKit"
         >
-          Store
+          Subscribe
         </a>
       </div>
 
