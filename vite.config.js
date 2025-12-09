@@ -9,7 +9,8 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('react')) return 'react';
+            if (id.includes('react') || id.includes('react-dom')) return 'react';
+            if (id.includes('@rainbow-me') || id.includes('wagmi') || id.includes('viem')) return 'wallet';
             if (id.includes('tailwind')) return 'tailwind';
             if (id.includes('dexscreener') || id.includes('coingecko')) return 'api';
             return 'vendor';
@@ -17,5 +18,8 @@ export default defineConfig({
         }
       }
     }
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom']
   }
 })
