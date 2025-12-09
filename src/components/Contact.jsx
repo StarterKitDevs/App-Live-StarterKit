@@ -2,7 +2,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <section className="bg-[#070c29]">
+  <section className="bg-black">
       <a href="https://discord.com/invite/ubaMrbUZxQ">
         <div className="w-full h-16 bg-[#0075fe] rounded-md flex items-center justify-center font-semibold text-white">
           Discord{" "}

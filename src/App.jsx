@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Market from './pages/Market';
 import Swal from 'sweetalert2';
 
 
@@ -63,10 +65,17 @@ const App = () => {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider modalSize="compact">
-          <Nav />
-          <Hero />
-          <Contact />
-          <Balancecheck />
+          <BrowserRouter>
+            <Nav />
+            <Routes>
+              <Route path="/" element={<>
+                <Hero />
+                <Contact />
+                <Balancecheck />
+              </>} />
+              <Route path="/market" element={<Market />} />
+            </Routes>
+          </BrowserRouter>
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>

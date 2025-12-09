@@ -26,4 +26,12 @@ body, * {
   font-style: normal;
   }
 
+/* Make the entire app background black and default text white */
+html, body, #root {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Ensure utility containers inherit transparent background unless specifically set */
+* { background-color: transparent; }
   
