@@ -9,7 +9,7 @@ const Nav = () => {
           <img className="w-24" src={logo} alt="logo" />
         </a>
         <div className="flex items-center">
-          <div className="items-center mr-1 hidden md:flex">
+          <div className="items-center mr-1 flex">
             <a className="mx-2 lg:mx-4 hover:opacity-75 transition-all duration-300" href="">Docs</a>
             <a className="mx-2 lg:mx-4 hover:opacity-75 transition-all duration-300 py-2 px-6 text-white bg-slate-900" href="https://discord.com/invite/ubaMrbUZxQ">Discord</a>
           </div>
