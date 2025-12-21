@@ -8,3 +8,5 @@ export default defineConfig({
     outDir: 'dist',  // matches Vercel output dir
   },
 })
+
+// trigger redeploy
