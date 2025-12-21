@@ -12,7 +12,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Market from './pages/Market';
 import Swal from 'sweetalert2';
 
-
 const config = getDefaultConfig({
   appName: "My RainbowKit App",
   projectId: projectId,
