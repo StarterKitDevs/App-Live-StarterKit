@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',  // matches Vercel output dir
-  },
+  }
 })
 
 // trigger redeploy
