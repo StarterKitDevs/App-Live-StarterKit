@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
+import BottomSearchBar from "./components/BottomSearchBar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Market from './pages/Market';
 import Swal from 'sweetalert2';
@@ -74,6 +75,7 @@ const App = () => {
               </>} />
               <Route path="/market" element={<Market />} />
             </Routes>
+            <BottomSearchBar />
           </BrowserRouter>
         </RainbowKitProvider>
       </QueryClientProvider>
