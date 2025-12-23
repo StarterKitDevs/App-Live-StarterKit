@@ -4,7 +4,7 @@ const Contact = () => {
   return (
   <section className="bg-black">
       <a href="https://discord.com/invite/ubaMrbUZxQ">
-        <div className="w-full h-16 bg-[#0075fe] rounded-md flex items-center justify-center font-semibold text-white">
+        <div className="w-full h-16 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 rounded-md flex items-center justify-center font-semibold text-gray-900">
           Discord{" "}
           <span className="ml-2">
             <HiArrowRight />

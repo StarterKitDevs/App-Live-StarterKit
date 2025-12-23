@@ -5,7 +5,6 @@
   right: 0;
   z-index: 9999;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
 }
 
 .search-bar-wrapper.visible {
@@ -26,7 +25,6 @@
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
-  pointer-events: all;
 }
 
 .search-bar-container.minimized {
@@ -142,7 +140,6 @@
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  pointer-events: all;
 }
 
 .search-results::-webkit-scrollbar {
