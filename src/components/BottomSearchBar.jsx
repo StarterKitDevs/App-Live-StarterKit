@@ -5,12 +5,18 @@ const BottomSearchBar = () => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [isVisible, setIsVisible] = useState(true);
+  const [isFocused, setIsFocused] = useState(false);
   
   const prevScrollRef = useRef(0);
 
-  // Auto-hide on scroll
+  // Auto-hide on scroll (disabled when input is focused)
   useEffect(() => {
     const handleScroll = () => {
+      // Don't hide when input is focused (mobile keyboard might trigger scroll)
+      if (isFocused) {
+        return;
+      }
+      
       const currentScroll = window.pageYOffset;
       
       if (currentScroll > prevScrollRef.current && currentScroll > 100) {
@@ -24,7 +30,7 @@ const BottomSearchBar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isFocused]);
 
   // Debounced search
   useEffect(() => {
@@ -93,6 +99,11 @@ const BottomSearchBar = () => {
           placeholder="Search videos..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          onFocus={() => {
+            setIsFocused(true);
+            setIsVisible(true);
+          }}
+          onBlur={() => setIsFocused(false)}
         />
 
         {query && (
