@@ -5,7 +5,7 @@ const Hero = () => {
   const [activeVid, setActiveVid] = useState(true);
 
   return (
-    <section className="w-full bg-black text-white md:py-16 py-8 lg:pt-12 md:pt-32 pt-28">
+    <section className="w-full bg-black text-white md:py-16 py-8 pt-6">
       <h1 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center">StarterKit Ecosystem</h1>
       <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-gray-400">Education On-Demand | 24/7 Community</p>
 

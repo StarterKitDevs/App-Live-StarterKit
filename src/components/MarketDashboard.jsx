@@ -209,12 +209,12 @@ const MarketDashboard = () => {
   return (
     <>
       <div className="w-full max-w-7xl mx-auto p-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-3">
           <h2 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center text-white mb-3">Current Market Dashboard</h2>
           <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-gray-400">Education On-Demand | 24/7 Community</p>
 
           <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
-            <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="http://localhost:5173/">Home</a>
+            <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="/">Home</a>
             <a className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://www.youtube.com/@GetStarterKit" target="_blank" rel="noopener noreferrer">Subscribe</a>
             <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://basedrop.fun" target="_blank" rel="noopener noreferrer">Basedop</a>
           </div>
@@ -224,7 +224,7 @@ const MarketDashboard = () => {
       </div>
 
       {/* CoinGecko price marquee widget above heatmap, no space in between */}
-      <div className="w-full max-w-7xl mx-auto p-4">
+      <div className="w-full max-w-7xl mx-auto">
         <div ref={marqueeRef} />
         <CoinGeckoHeatmap locale="en" darkMode={true} top={50} />
       </div>

@@ -12,7 +12,7 @@ const Nav = () => {
           <a className="mx-2 lg:mx-4 hover:opacity-75 transition-all duration-300" href="">Docs</a>
           <a className="mx-2 lg:mx-4 hover:opacity-75 transition-all duration-300 py-2 px-6 text-white bg-slate-900" href="https://discord.com/invite/ubaMrbUZxQ">Discord</a>
           <div className="flex items-center ml-2">
-            <ConnectButton />
+            <ConnectButton label="Log In" />
           </div>
         </div>
       </div>
