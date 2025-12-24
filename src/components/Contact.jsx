@@ -12,14 +12,6 @@ const Contact = () => {
           </span>
         </div>
       </Link>
-      <div className="container mx-auto bg-black h-full p-10">
-        <h1 className="text-white md:text-6xl text-3xl font-bold">Connect with us</h1>
-        <div className="flex items-center justify-between md:mt-10 mt-5">
-          <h1 className="text-white md:text-3xl text-lg">
-          Join us on discord to access our private community.
-          </h1>
-        </div>
-      </div>
     </section>
   );
 };

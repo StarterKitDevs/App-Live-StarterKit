@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
+import CalendarBooking from "./components/CalendarBooking";
 import BottomSearchBar from "./components/BottomSearchBar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Market from './pages/Market';
@@ -72,6 +73,7 @@ const App = () => {
               <Route path="/" element={<>
                 <Hero />
                 <Contact />
+                <CalendarBooking />
                 <Balancecheck />
               </>} />
               <Route path="/market" element={<Market />} />
