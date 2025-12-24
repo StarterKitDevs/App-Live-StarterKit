@@ -49,7 +49,7 @@ const BottomSearchBar = () => {
   const searchVideos = async (searchTerm) => {
     try {
       const CHANNEL_ID = 'UCBdWQ1bvfUWXCz6je9Ep7wg';
-      const API_KEY = 'AIzaSyBQkDvBbsmVGEYDDgs0IV4AWgNiBrr8Seo';
+      const API_KEY = 'AIzaSyC2iYJeKOlObkFDnL40S3WQBEvNlXy810Y';
       
       const response = await fetch(
         `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&channelId=${CHANNEL_ID}&q=${encodeURIComponent(searchTerm)}&maxResults=10&order=relevance&key=${API_KEY}`

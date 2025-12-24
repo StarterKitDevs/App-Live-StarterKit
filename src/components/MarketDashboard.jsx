@@ -232,7 +232,7 @@ const MarketDashboard = () => {
       {/* TradingView chart now directly below the heatmap */}
       {typeof window !== 'undefined' && (
         <div className="w-full" style={{ background: 'transparent' }}>
-          <div className="w-full max-w-7xl mx-auto p-4">
+          <div className="w-full max-w-7xl mx-auto">
             {/* Parent controls height responsively; widget fills 100% of this container */}
             <div className="h-[40vh] md:h-[60vh]">
               <TradingViewWidget height="100%" fullWidth={false} lazy={true} />

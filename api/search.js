@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   }
 
   const CHANNEL_ID = 'UCBdWQ1bvfUWXCz6je9Ep7wg'; // @GetStarterKit channel
-  const API_KEY = process.env.YOUTUBE_API_KEY || 'AIzaSyBQkDvBbsmVGEYDDgs0IV4AWgNiBrr8Seo';
+  const API_KEY = process.env.YOUTUBE_API_KEY;
 
   if (!API_KEY) {
     console.error('YouTube API key not found in environment variables');

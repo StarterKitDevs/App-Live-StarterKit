@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import BottomSearchBar from "./components/BottomSearchBar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Market from './pages/Market';
+import Videos from './pages/Videos';
 import Swal from 'sweetalert2';
 
 const config = getDefaultConfig({
@@ -74,6 +75,7 @@ const App = () => {
                 <Balancecheck />
               </>} />
               <Route path="/market" element={<Market />} />
+              <Route path="/videos" element={<Videos />} />
             </Routes>
             <BottomSearchBar />
           </BrowserRouter>
