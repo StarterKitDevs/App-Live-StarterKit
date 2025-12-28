@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
-  <section className="bg-black">
+  <section className="bg-black pb-16">
       <Link to="/videos">
         <div className="w-full h-16 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 rounded-md flex items-center justify-center font-semibold text-gray-900">
           ON DEMAND{" "}

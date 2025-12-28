@@ -13,6 +13,7 @@ import BottomSearchBar from "./components/BottomSearchBar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Market from './pages/Market';
 import Videos from './pages/Videos';
+import Members from './pages/Members';
 import Swal from 'sweetalert2';
 
 const config = getDefaultConfig({
@@ -78,6 +79,7 @@ const App = () => {
               </>} />
               <Route path="/market" element={<Market />} />
               <Route path="/videos" element={<Videos />} />
+              <Route path="/members" element={<Members />} />
             </Routes>
             <BottomSearchBar />
           </BrowserRouter>
