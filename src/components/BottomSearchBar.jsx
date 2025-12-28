@@ -1,17 +1,27 @@
+
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './BottomSearchBar.css';
 
 const BottomSearchBar = () => {
+  const navigate = useNavigate();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [isVisible, setIsVisible] = useState(true);
   const [isFocused, setIsFocused] = useState(false);
-  
+  const [glossaryData, setGlossaryData] = useState([]);
   const prevScrollRef = useRef(0);
   const searchBarRef = useRef(null);
   const inputRef = useRef(null);
   const mouseMoveTimerRef = useRef(null);
   const scrollTimerRef = useRef(null);
+
+  // Load glossary data once
+  useEffect(() => {
+    fetch('/data/glossary.json')
+      .then((res) => res.json())
+      .then((data) => setGlossaryData(data));
+  }, []);
 
   // Handle global keypress to show search bar
   useEffect(() => {
@@ -89,35 +99,24 @@ const BottomSearchBar = () => {
     };
   }, [isFocused, isVisible]);
 
-  // Debounced search
+  // Debounced search for glossary terms
   useEffect(() => {
     if (!query.trim()) {
       setResults([]);
       return;
     }
-
     const timer = setTimeout(() => {
-      searchVideos(query);
-    }, 300);
-
+      const lowerQuery = query.toLowerCase();
+      const filtered = glossaryData
+        .filter(term =>
+          term.name.toLowerCase().includes(lowerQuery) ||
+          term.definition.toLowerCase().includes(lowerQuery)
+        )
+        .slice(0, 8);
+      setResults(filtered);
+    }, 200);
     return () => clearTimeout(timer);
-  }, [query]);
-
-  const searchVideos = async (searchTerm) => {
-    try {
-      const CHANNEL_ID = 'UCBdWQ1bvfUWXCz6je9Ep7wg';
-      const API_KEY = 'AIzaSyC2iYJeKOlObkFDnL40S3WQBEvNlXy810Y';
-      
-      const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&channelId=${CHANNEL_ID}&q=${encodeURIComponent(searchTerm)}&maxResults=10&order=relevance&key=${API_KEY}`
-      );
-      
-      const data = await response.json();
-      setResults(data.items || []);
-    } catch (error) {
-      console.error('Search failed:', error);
-    }
-  };
+  }, [query, glossaryData]);
 
   return (
     <>
@@ -163,26 +162,25 @@ const BottomSearchBar = () => {
       {/* Results Panel */}
       {results.length > 0 && (
         <div className="search-results">
-          {results.map((video) => (
-            <a
-              key={video.id.videoId}
-              href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="video-result"
+          {results.map((term) => (
+            <div
+              key={term.id}
+              className="video-result cursor-pointer hover:bg-gray-700"
+              onClick={() => {
+                setIsVisible(false);
+                setQuery('');
+                setResults([]);
+                navigate(`/glossary/${encodeURIComponent(term.name)}`);
+              }}
             >
-              <img
-                src={video.snippet.thumbnails.medium.url}
-                alt={video.snippet.title}
-                className="video-thumbnail"
-              />
               <div className="video-info">
-                <div className="video-title">{video.snippet.title}</div>
-                <div className="video-description">
-                  {video.snippet.description}
-                </div>
+                <div className="video-title">{term.name}</div>
+                <div className="video-description">{term.definition}</div>
+                {term.category && (
+                  <span className="result-category">{term.category}</span>
+                )}
               </div>
-            </a>
+            </div>
           ))}
         </div>
       )}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Smart Contract",
+    "definition": "Self-executing code on blockchain with predefined conditions. Runs automatically when conditions are met without intermediaries.",
+    "category": "blockchain"
+  },
+  {
+    "id": 2,
+    "name": "Wallet",
+    "definition": "Software or hardware that stores cryptocurrency private/public key pairs. Used to send, receive, and manage digital assets.",
+    "category": "crypto"
+  },
+  {
+    "id": 3,
+    "name": "Blockchain",
+    "definition": "Distributed ledger technology that records transactions in chronological blocks linked by cryptographic hashes. Immutable and decentralized.",
+    "category": "blockchain"
+  },
+  {
+    "id": 4,
+    "name": "Mining",
+    "definition": "Process of validating transactions and adding new blocks to blockchain. Miners are rewarded with cryptocurrency for computational work.",
+    "category": "crypto"
+  },
+  {
+    "id": 5,
+    "name": "Gas Fee",
+    "definition": "Cost required to execute transactions or smart contracts on blockchain networks like Ethereum. Measured in gwei or wei.",
+    "category": "blockchain"
+  },
+  {
+    "id": 6,
+    "name": "DeFi",
+    "definition": "Decentralized Finance. Financial services built on blockchain without traditional intermediaries like banks or brokers.",
+    "category": "web3"
+  },
+  {
+    "id": 7,
+    "name": "NFT",
+    "definition": "Non-Fungible Token. Unique digital asset representing ownership of items like art, collectibles, or virtual real estate on blockchain.",
+    "category": "crypto"
+  },
+  {
+    "id": 8,
+    "name": "Consensus Mechanism",
+    "definition": "Algorithm that validates transactions and secures blockchain. Common types: Proof of Work (PoW) and Proof of Stake (PoS).",
+    "category": "blockchain"
+  },
+  {
+    "id": 9,
+    "name": "Private Key",
+    "definition": "Secret cryptographic key that authorizes cryptocurrency transactions. Never share—loss means permanent loss of funds.",
+    "category": "crypto"
+  },
+  {
+    "id": 10,
+    "name": "Public Key",
+    "definition": "Publicly shareable cryptographic key derived from private key. Used to receive funds and verify transactions.",
+    "category": "crypto"
+  },
+  {
+    "id": 11,
+    "name": "Staking",
+    "definition": "Process of locking cryptocurrency in a wallet to support blockchain operations. Rewards participants with additional tokens.",
+    "category": "web3"
+  },
+  {
+    "id": 12,
+    "name": "Nodes",
+    "definition": "Computers that maintain copies of the blockchain and validate transactions. Essential infrastructure for decentralized networks.",
+    "category": "blockchain"
+  },
+  {
+    "id": 13,
+    "name": "Token",
+    "definition": "Digital asset built on existing blockchain (e.g., ERC-20 on Ethereum). Can represent ownership, utility, or governance rights.",
+    "category": "crypto"
+  },
+  {
+    "id": 14,
+    "name": "Airdrop",
+    "definition": "Free distribution of cryptocurrency tokens to wallet holders. Marketing strategy to increase adoption and awareness.",
+    "category": "crypto"
+  },
+  {
+    "id": 15,
+    "name": "Fork",
+    "definition": "Change to blockchain protocol creating new version. Hard fork (incompatible) or soft fork (backward compatible).",
+    "category": "blockchain"
+  },
+  {
+    "id": 16,
+    "name": "DAO",
+    "definition": "Decentralized Autonomous Organization. Smart contract-based organization governed by token holders through voting, no central authority.",
+    "category": "web3"
+  },
+  {
+    "id": 17,
+    "name": "Ledger",
+    "definition": "Record of all transactions on blockchain. Distributed across network nodes, immutable once recorded.",
+    "category": "blockchain"
+  },
+  {
+    "id": 18,
+    "name": "Hash",
+    "definition": "Cryptographic function converting data into fixed-length string. Used to secure blockchain data and verify transaction integrity.",
+    "category": "blockchain"
+  },
+  {
+    "id": 19,
+    "name": "Decentralization",
+    "definition": "System architecture where control is distributed across network instead of centralized authority. Core principle of blockchain.",
+    "category": "blockchain"
+  },
+  {
+    "id": 20,
+    "name": "Altcoin",
+    "definition": "Any cryptocurrency other than Bitcoin. Alternative coins created after Bitcoin with different features and use cases.",
+    "category": "crypto"
+  }
+]
