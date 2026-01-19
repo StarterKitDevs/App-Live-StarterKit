@@ -19,9 +19,9 @@ const Hero = () => {
   const [activeVid, setActiveVid] = useState(true);
 
   return (
-    <section className="w-full bg-black text-white md:py-16 py-8 pt-6">
-      <h1 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center">StarterKit Ecosystem</h1>
-      <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-gray-400">Education On-Demand | 24/7 Community</p>
+      <section className="w-full bg-black text-white md:py-16 py-8 pt-6">
+        <h1 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center" style={{ color: '#FFA500' }}>StarterKit Ecosystem</h1>
+      <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-white">Education On-Demand | 24/7 Community</p>
 
       <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
         <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold p-2" href="/members">Join</a>
