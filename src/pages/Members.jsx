@@ -51,7 +51,7 @@ const Members = () => {
 
         <div className="space-y-6">
           {/* Starter Kit Member (FREE) */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border-2 border-gray-700 hover:border-orange-500 transition-all duration-300">
+          <a href="https://whop.com/starterkit-e7a9/starterkit-member/" target="_blank" rel="noopener noreferrer" className="block bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border-2 border-gray-700 hover:border-orange-500 transition-all duration-300 cursor-pointer">
             <h2 className="md:text-4xl text-3xl font-bold mb-4">
               Starter Kit Member (FREE)
             </h2>
@@ -65,13 +65,10 @@ const Members = () => {
                 <span className="md:text-xl text-lg">Basic On-Demand Crypto Training</span>
               </li>
             </ul>
-            <div className="mt-6 flex justify-end">
-              <a href="https://whop.com/starterkit-e7a9/starterkit-member/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 rounded-lg text-gray-900 font-bold text-lg">Get Free Access</a>
-            </div>
-          </div>
+          </a>
 
           {/* Pocket Kit ($10) */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border-2 border-gray-700 hover:border-orange-500 transition-all duration-300">
+          <a href="https://whop.com/starterkit-e7a9/pocket-kit/" target="_blank" rel="noopener noreferrer" className="block bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border-2 border-gray-700 hover:border-orange-500 transition-all duration-300 cursor-pointer">
             <h2 className="md:text-4xl text-3xl font-bold mb-2">
               Pocket Kit ($10)
             </h2>
@@ -86,13 +83,10 @@ const Members = () => {
                 <span className="md:text-xl text-lg">Access to replays pop ups</span>
               </li>
             </ul>
-            <div className="mt-6 flex justify-end">
-              <a href="https://whop.com/starterkit-e7a9/pocket-kit/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 rounded-lg text-gray-900 font-bold text-lg">Get Pocket Kit</a>
-            </div>
-          </div>
+          </a>
 
           {/* Premium ($25) */}
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border-2 border-gray-700 hover:border-orange-500 transition-all duration-300">
+          <a href="https://whop.com/starterkit-e7a9/premium-member-access-82/" target="_blank" rel="noopener noreferrer" className="block bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border-2 border-gray-700 hover:border-orange-500 transition-all duration-300 cursor-pointer">
             <h2 className="md:text-4xl text-3xl font-bold mb-2">
               Premium ($25)
             </h2>
@@ -115,10 +109,7 @@ const Members = () => {
                 <span className="md:text-xl text-lg">Access to Private Starter Kit Channels</span>
               </li>
             </ul>
-            <div className="mt-6 flex justify-end">
-              <a href="https://whop.com/starterkit-e7a9/premium-member-access-82/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 rounded-lg text-gray-900 font-bold text-lg">Get Premium</a>
-            </div>
-          </div>
+          </a>
 
           {/* Lifetime Membership */}
           <div className="bg-gradient-to-br from-orange-900/30 to-yellow-900/30 rounded-3xl p-8 border-2 border-orange-500 hover:border-yellow-500 transition-all duration-300">
