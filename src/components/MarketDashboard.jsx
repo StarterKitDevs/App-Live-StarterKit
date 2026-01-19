@@ -214,7 +214,7 @@ const MarketDashboard = () => {
           <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-white">Education On-Demand | 24/7 Community</p>
 
           <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
-            <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="/members">Join</a>
+            <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://www.youtube.com/@GetStarterKit" target="_blank" rel="noopener noreferrer">On Demand</a>
             <a className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://www.youtube.com/@GetStarterKit" target="_blank" rel="noopener noreferrer">Subscribe</a>
             <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://basedrop.fun" target="_blank" rel="noopener noreferrer">Basedop</a>
           </div>
@@ -268,24 +268,7 @@ const MarketDashboard = () => {
           </div>
         </div>
         {/* Token tiles grid below the YouTube video */}
-        <div className="w-full max-w-7xl mx-auto p-4">
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {marketData.map((coin) => (
-              <a
-                key={coin.symbol}
-                href={coin.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-slate-800 rounded-lg p-4 hover:bg-slate-700 transition-colors duration-200"
-              >
-                <div className="flex flex-col items-center p-6">
-                  <h3 className="text-white font-bold text-xl tracking-wide">${coin.symbol}</h3>
-                  {/* price removed as requested */}
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+        {/* Token tiles grid removed as requested */}
       </div>
     </>
   );
