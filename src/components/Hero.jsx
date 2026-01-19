@@ -1,3 +1,16 @@
+      <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
+        <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold p-2" href="/members">Join</a>
+        <Link className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-green-500 hover:bg-green-600 transition-all duration-300 text-white font-semibold" to="/market">Current Market</Link>
+        <a
+          className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-blue-700 active:bg-blue-700 transition-all duration-300 text-gray-900 font-semibold p-2"
+          href="https://discord.com/invite/ubaMrbUZxQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Discord
+        </a>
+      </div>
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -10,19 +23,18 @@ const Hero = () => {
       <h1 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center">StarterKit Ecosystem</h1>
       <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-gray-400">Education On-Demand | 24/7 Community</p>
 
-      {/* ...existing code... */}
-        <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
-          <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold p-2" href="/members">Join</a>
-          <Link className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" to="/market">Current Market</Link>
-          <a
-            className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-blue-700 active:bg-blue-700 transition-all duration-300 text-gray-900 font-semibold p-2"
-            href="https://discord.com/invite/ubaMrbUZxQ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Discord
-          </a>
-        </div>
+      <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
+        <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold p-2" href="/members">Join</a>
+        <Link className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-green-500 hover:bg-green-600 transition-all duration-300 text-white font-semibold" to="/market">Current Market</Link>
+        <a
+          className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-blue-700 active:bg-blue-700 transition-all duration-300 text-gray-900 font-semibold p-2"
+          href="https://discord.com/invite/ubaMrbUZxQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Discord
+        </a>
+      </div>
 
       <div className="w-fit mx-auto mt-10 flex items-center justify-center">
         <button onClick={() => setActiveVid(!activeVid)} className={`py-4 px-4 border-b-2 transition-all duration-300 md:text-2xl sm:text-xl ${activeVid ? 'border-b-white text-white' : 'border-b-gray-400 text-gray-400'}`}>

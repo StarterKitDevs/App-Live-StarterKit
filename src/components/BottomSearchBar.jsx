@@ -191,7 +191,7 @@ const BottomSearchBar = () => {
           ref={inputRef}
           type="text"
           className="search-input"
-          placeholder="Search videos..."
+          placeholder="Search glossary..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => {

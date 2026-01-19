@@ -8,12 +8,12 @@ const Members = () => {
     <>
       {/* Hero Section */}
       <section className="w-full bg-black text-white md:py-16 py-8 pt-6">
-        <h1 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center">StarterKit Ecosystem</h1>
-        <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-gray-400">Education On-Demand | 24/7 Community</p>
+        <h1 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center" style={{color: '#FFA500'}}>StarterKit Members</h1>
+        <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-white">Education On-Demand | 24/7 Community</p>
 
         <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
-          <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://www.youtube.com/watch?v=hC_lAf2N_M0" target="_blank" rel="noopener noreferrer">$$$</a>
-          <Link className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" to="/market">Current Market</Link>
+          <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://discord.com/invite/ubaMrbUZxQ" target="_blank" rel="noopener noreferrer">Discord</a>
+          <Link className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-green-500 hover:bg-green-600 transition-all duration-300 text-white font-semibold" to="/market">Current Market</Link>
           <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://basedrop.fun/drop" target="_blank" rel="noopener noreferrer">Create</a>
         </div>
 
@@ -29,7 +29,7 @@ const Members = () => {
         <div className="lg:w-[1000px] mx-auto">
           <div className="w-full pt-[56.17021276595745%] relative">
             {activeVid ? (
-              <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/uD94xn1Roa0?si=PP61DWqAgh97oflO" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/hC_lAf2N_M0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             ) : (
               <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/Pt0k6Zbg-Gw?si=UDjO1_E5_bbSBNJT" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             )}

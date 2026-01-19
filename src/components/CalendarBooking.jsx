@@ -17,8 +17,24 @@ const CalendarBooking = () => {
             </p>
           </div>
 
+          {/* Features - move up closer to header */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-8 mb-2">
+            <div className="bg-black rounded-xl p-2 border border-gray-700">
+              <h3 className="text-base font-semibold mb-1">Quick Response</h3>
+              <p className="text-gray-400 text-xs">Get answers to your questions in real-time</p>
+            </div>
+            <div className="bg-black rounded-xl p-2 border border-gray-700">
+              <h3 className="text-base font-semibold mb-1">Personalized Plan</h3>
+              <p className="text-gray-400 text-xs">Custom strategy tailored to your goals</p>
+            </div>
+            <div className="bg-black rounded-xl p-2 border border-gray-700">
+              <h3 className="text-base font-semibold mb-1">Expert Guidance</h3>
+              <p className="text-gray-400 text-xs">Learn from experienced Web3 professionals</p>
+            </div>
+          </div>
+
           {/* Cal.com Booking */}
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-2 border border-gray-700 shadow-2xl mb-4">
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-1 border border-gray-700 shadow-2xl mb-2 mt-12">
             <iframe
               src="https://cal.com/starter-kit-vovxre"
               width="100%"
@@ -27,25 +43,6 @@ const CalendarBooking = () => {
               style={{ borderRadius: '12px' }}
               title="Book a consultation"
             ></iframe>
-          </div>
-
-          {/* Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-3 border border-gray-700">
-              <div className="text-orange-500 text-2xl mb-2">⚡</div>
-              <h3 className="text-base font-semibold mb-1">Quick Response</h3>
-              <p className="text-gray-400 text-xs">Get answers to your questions in real-time</p>
-            </div>
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-3 border border-gray-700">
-              <div className="text-orange-500 text-2xl mb-2">🎯</div>
-              <h3 className="text-base font-semibold mb-1">Personalized Plan</h3>
-              <p className="text-gray-400 text-xs">Custom strategy tailored to your goals</p>
-            </div>
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-3 border border-gray-700">
-              <div className="text-orange-500 text-2xl mb-2">🚀</div>
-              <h3 className="text-base font-semibold mb-1">Expert Guidance</h3>
-              <p className="text-gray-400 text-xs">Learn from experienced Web3 professionals</p>
-            </div>
           </div>
 
           {/* Footer note */}

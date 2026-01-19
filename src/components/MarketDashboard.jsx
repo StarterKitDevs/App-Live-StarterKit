@@ -210,8 +210,8 @@ const MarketDashboard = () => {
     <>
       <div className="w-full max-w-7xl mx-auto p-4">
         <div className="text-center mb-3">
-          <h2 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center text-white mb-3">Current Market Dashboard</h2>
-          <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-gray-400">Education On-Demand | 24/7 Community</p>
+          <h2 className="md:text-6xl sm:text-4xl text-2xl font-bold text-center text-green-500 mb-3">Current Market Dashboard</h2>
+          <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-white">Education On-Demand | 24/7 Community</p>
 
           <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
             <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="/members">Join</a>
@@ -246,7 +246,7 @@ const MarketDashboard = () => {
         <div className="w-full max-w-7xl mx-auto p-4 py-12">
           <div className="text-center mb-6">
             <h3 className="text-white text-3xl md:text-5xl font-bold">StarterKit Ecosystem</h3>
-            <p className="text-gray-400 mt-2">Education On-Demand | 24/7 Community</p>
+            <p className="text-white mt-2">Education On-Demand | 24/7 Community</p>
           </div>
 
           {/* Responsive iframe wrapper */}
