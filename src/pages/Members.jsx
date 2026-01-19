@@ -48,6 +48,7 @@ const Members = () => {
           </h1>
 
         {/* Membership Cards */}
+
         <div className="space-y-6">
           {/* Starter Kit Member (FREE) */}
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border-2 border-gray-700 hover:border-orange-500 transition-all duration-300">
@@ -64,6 +65,9 @@ const Members = () => {
                 <span className="md:text-xl text-lg">Basic On-Demand Crypto Training</span>
               </li>
             </ul>
+            <div className="mt-6 flex justify-end">
+              <a href="https://whop.com/starterkit-e7a9/starterkit-member/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 rounded-lg text-gray-900 font-bold text-lg">Get Free Access</a>
+            </div>
           </div>
 
           {/* Pocket Kit ($10) */}
@@ -82,6 +86,9 @@ const Members = () => {
                 <span className="md:text-xl text-lg">Access to replays pop ups</span>
               </li>
             </ul>
+            <div className="mt-6 flex justify-end">
+              <a href="https://whop.com/starterkit-e7a9/pocket-kit/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 rounded-lg text-gray-900 font-bold text-lg">Get Pocket Kit</a>
+            </div>
           </div>
 
           {/* Premium ($25) */}
@@ -108,6 +115,9 @@ const Members = () => {
                 <span className="md:text-xl text-lg">Access to Private Starter Kit Channels</span>
               </li>
             </ul>
+            <div className="mt-6 flex justify-end">
+              <a href="https://whop.com/starterkit-e7a9/premium-member-access-82/" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 rounded-lg text-gray-900 font-bold text-lg">Get Premium</a>
+            </div>
           </div>
 
           {/* Lifetime Membership */}
