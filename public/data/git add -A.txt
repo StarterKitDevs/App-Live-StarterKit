@@ -1,0 +1,3 @@
+git add -A
+git commit -m "Deploy: sync with localhost"
+git push origin main

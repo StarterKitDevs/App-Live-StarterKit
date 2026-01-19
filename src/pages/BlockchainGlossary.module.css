@@ -1,0 +1,16 @@
+/* MIT License. Custom styles for BlockchainGlossary. */
+.glossaryCard {
+  @apply bg-white dark:bg-gray-900 rounded-lg shadow p-4 mb-4 transition-all;
+}
+.readMore {
+  @apply text-blue-600 hover:underline cursor-pointer;
+}
+.carousel {
+  @apply flex gap-2 mt-4 overflow-x-auto;
+}
+.carouselItem {
+  @apply bg-gray-200 dark:bg-gray-700 rounded px-3 py-1 text-sm;
+}
+.spinner {
+  @apply animate-spin w-8 h-8 text-blue-500 mx-auto my-8;
+}

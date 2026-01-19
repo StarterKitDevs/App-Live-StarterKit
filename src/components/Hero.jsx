@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Hero = () => {
   const [activeVid, setActiveVid] = useState(true);
@@ -10,9 +11,11 @@ const Hero = () => {
       <p className="md:text-2xl sm:text-xl px-4 font-medium text-center text-gray-400">Education On-Demand | 24/7 Community</p>
 
       <div className="grid grid-cols-3 md:max-w-[600px] max-w-[400px] gap-2 mx-auto md:mt-10 sm:mt-5 mt-3 px-2">
-        <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://www.youtube.com/watch?v=hC_lAf2N_M0" target="_blank" rel="noopener noreferrer">Join</a>
+        <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="/members">Join</a>
         <Link className="md:text-lg text-sm truncate sm:flex sm:items-center sm:justify-center rounded-md p-2 bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" to="/market">Current Market</Link>
-        <a className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold" href="https://basedrop.fun/drop" target="_blank" rel="noopener noreferrer">Create</a>
+        <div className="md:text-lg text-sm rounded-md flex items-center justify-center bg-[#FFA500] hover:bg-orange-400 transition-all duration-300 text-gray-900 font-semibold p-0">
+          <ConnectButton label="Login" showBalance={false} chainStatus="none" accountStatus="icon" />
+        </div>
       </div>
 
       <div className="w-fit mx-auto mt-10 flex items-center justify-center">

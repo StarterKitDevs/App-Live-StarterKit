@@ -12,10 +12,9 @@ import CalendarBooking from "./components/CalendarBooking";
 import BottomSearchBar from "./components/BottomSearchBar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Market from './pages/Market';
-import GlossaryTerm from './pages/Videos';
 import Members from './pages/Members';
 import GlossaryDirectory from './pages/GlossaryDirectory';
-import GlossaryFallback from './pages/GlossaryFallback';
+import GlossaryTerm from './pages/GlossaryTerm';
 import Swal from 'sweetalert2';
 
 const config = getDefaultConfig({

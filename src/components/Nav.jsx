@@ -1,4 +1,3 @@
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { HiHome } from "react-icons/hi";
 import logo from "../assets/logo.jpg";
 
@@ -14,11 +13,7 @@ const Nav = () => {
           <a className="mx-2 lg:mx-4 hover:opacity-75 transition-all duration-300" href="/glossary">Glossary</a>
           <a className="mx-2 lg:mx-4 hover:opacity-75 transition-all duration-300" href="">Docs</a>
           <a className="mx-2 lg:mx-4 hover:opacity-75 transition-all duration-300 py-2 px-6 text-white bg-slate-900" href="https://discord.com/invite/ubaMrbUZxQ">Discord</a>
-            <div className="flex items-center ml-2">
-              <div className="px-2 py-2 sm:px-0 sm:py-0 w-full">
-                <ConnectButton label="Login" />
-              </div>
-            </div>
+            {/* Login button removed for homepage placement */}
           <a className="mx-2 lg:mx-4 hover:text-orange-500 transition-all duration-300 flex items-center text-2xl text-gray-800" href="/" title="Home">
             <HiHome />
           </a>

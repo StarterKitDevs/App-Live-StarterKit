@@ -1,0 +1,22 @@
+[
+  {"term": "Blockchain", "definition": "A distributed ledger technology that records transactions in a secure, immutable, and decentralized manner.", "category": "Core", "related": ["Block", "Hash", "Node"]},
+  {"term": "Smart Contract", "definition": "Self-executing code on a blockchain that runs when predetermined conditions are met.", "category": "Core", "related": ["Ethereum", "Solidity", "Contract"]},
+  {"term": "Node", "definition": "A computer that participates in the blockchain network by maintaining a copy of the ledger and validating transactions.", "category": "Core", "related": ["Blockchain", "Validator", "Consensus"]},
+  {"term": "Consensus", "definition": "A mechanism by which blockchain nodes agree on the state of the ledger.", "category": "Core", "related": ["Proof of Work", "Proof of Stake"]},
+  {"term": "Proof of Work", "definition": "A consensus algorithm that requires participants to solve complex mathematical puzzles to validate transactions.", "category": "Consensus", "related": ["Mining", "Bitcoin"]},
+  {"term": "Proof of Stake", "definition": "A consensus algorithm where validators are chosen based on the amount of cryptocurrency they hold and are willing to 'stake' as collateral.", "category": "Consensus", "related": ["Validator", "Ethereum 2.0"]},
+  {"term": "Mining", "definition": "The process of validating blockchain transactions and adding them to the ledger, often rewarded with cryptocurrency.", "category": "Consensus", "related": ["Proof of Work", "Miner"]},
+  {"term": "Wallet", "definition": "A software or hardware tool that stores private and public keys for cryptocurrency transactions.", "category": "User", "related": ["Private Key", "Public Key"]},
+  {"term": "Private Key", "definition": "A secret cryptographic key used to sign transactions and prove ownership of blockchain assets.", "category": "User", "related": ["Wallet", "Public Key"]},
+  {"term": "Public Key", "definition": "A cryptographic key that can be shared publicly and is used to receive blockchain assets.", "category": "User", "related": ["Wallet", "Private Key"]},
+  {"term": "Token", "definition": "A digital asset issued on a blockchain, representing value, utility, or governance rights.", "category": "Asset", "related": ["ERC-20", "NFT"]},
+  {"term": "NFT", "definition": "Non-fungible token, a unique digital asset that represents ownership of a specific item or piece of content.", "category": "Asset", "related": ["Token", "ERC-721"]},
+  {"term": "DeFi", "definition": "Decentralized Finance, a movement to recreate traditional financial services using blockchain technology.", "category": "Application", "related": ["DEX", "Lending"]},
+  {"term": "DEX", "definition": "Decentralized Exchange, a platform for trading cryptocurrencies without a central authority.", "category": "Application", "related": ["DeFi", "Liquidity"]},
+  {"term": "Liquidity", "definition": "The ease with which an asset can be bought or sold in the market without affecting its price.", "category": "Finance", "related": ["DEX", "AMM"]},
+  {"term": "AMM", "definition": "Automated Market Maker, a protocol that uses algorithms to price assets and provide liquidity.", "category": "Finance", "related": ["DEX", "Liquidity"]},
+  {"term": "Gas", "definition": "A fee required to conduct a transaction or execute a contract on the Ethereum blockchain.", "category": "Core", "related": ["Ethereum", "Transaction"]},
+  {"term": "Block", "definition": "A collection of transactions recorded on the blockchain, linked to previous blocks.", "category": "Core", "related": ["Blockchain", "Hash"]},
+  {"term": "Hash", "definition": "A cryptographic function that converts data into a fixed-size string, used to secure blockchain data.", "category": "Core", "related": ["Block", "Blockchain"]},
+  {"term": "Validator", "definition": "A participant in a proof-of-stake blockchain who validates transactions and creates new blocks.", "category": "Consensus", "related": ["Proof of Stake", "Node"]}
+]
